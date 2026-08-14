@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .row-center {
+    @apply flex justify-center items-center;
+  }
+  .col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+  .abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
+
+@layer Components {
+  .Container {
+    @apply container mx-auto 
+  }
+}
+
+body {
+  background: #0b0f14;
+  color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
