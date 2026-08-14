@@ -1,11 +1,20 @@
-import { lazy, Suspense, useLayoutEffect, useRef } from "react";
+import {
+  lazy,
+  Suspense,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
+
 import { Routes, Route, useLocation } from "react-router-dom";
 import gsap from "gsap";
 
 import Header from "./components/Header";
-import { ROUTES } from "./routes/path";
+import PageLoader from "./components/PageLoader";
 import ContactModal from "./ContactModal";
 import HireModal from "./components/HireModal";
+
+import { ROUTES } from "./routes/path";
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
@@ -14,7 +23,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 function PageAnimation({ children }) {
   const containerRef = useRef(null);
-  const {pathname} = useLocation();
+  const { pathname } = useLocation();
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -27,7 +36,7 @@ function PageAnimation({ children }) {
         {
           y: 0,
           opacity: 1,
-          delay:0.4,
+          delay: 0.4,
           duration: 1,
           ease: "power2.out",
         }
@@ -41,11 +50,17 @@ function PageAnimation({ children }) {
 }
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   return (
     <div>
+      {loading && (
+        <PageLoader onComplete={() => setLoading(false)} />
+      )}
+
       <Header />
 
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={null}>
         <PageAnimation>
           <Routes>
             <Route path={ROUTES.HOME} element={<Home />} />
