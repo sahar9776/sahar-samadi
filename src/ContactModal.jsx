@@ -38,7 +38,7 @@ function ContactModal() {
 
         {/* Close */}
         <button
-          onClick={closeModal}
+          onClick={()=>closeModal(false)}
           className="
             absolute right-5 top-5
             flex h-9 w-9 items-center justify-center
