@@ -37,7 +37,7 @@ function ContactModal() {
         />
 
         {/* Close */}
-        <button
+        {/* <button
           onClick={()=>closeModal(false)}
           className="
             absolute right-5 top-5
@@ -54,7 +54,7 @@ function ContactModal() {
           aria-label="Close"
         >
           <X size={19} />
-        </button>
+        </button> */}
 
         {/* Header */}
         <div className="relative mb-8">
