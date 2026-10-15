@@ -343,7 +343,7 @@ function Projects() {
               </p>
 
               {/* Libraries */}
-              <div className="mt-5 flex flex-wrap gap-2">
+              <div className="mb-5 flex flex-wrap gap-2">
                 {item.libraries.map((library) => (
                   <span
                     key={library}
