@@ -43,19 +43,7 @@ function DesktopHeader() {
           </Link>
         ))}
 
-        {/* Contact Me */}
-        <button
-          onClick={openModal}
-          className="group relative overflow-hidden rounded-lg bg-[#3b82f6] px-4 py-1.5 text-md font-medium text-white shadow-[0_4px_20px_rgba(59,130,246,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-[0_6px_25px_rgba(59,130,246,0.3)] active:translate-y-0"
-        >
-          <span className="relative z-10 capitalize">contact me</span>
-
-          <span
-            className=" absolute inset-0 -translate-x-full bg-white/10 transition-transform duration-500 group-hover:translate-x-0"
-          />
-        </button>
-
-        {/* Download CV */}
+         {/* Download CV */}
         <a
           href="/files/Sahar-Samadi-CV.pdf"
           target="_blank"
@@ -75,6 +63,20 @@ function DesktopHeader() {
 
           <span>download CV</span>
         </a>
+
+        {/* Contact Me */}
+        <button
+          onClick={openModal}
+          className="group relative overflow-hidden rounded-lg bg-[#3b82f6] px-4 py-1.5 text-md font-medium text-white shadow-[0_4px_20px_rgba(59,130,246,0.18)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#2563eb] hover:shadow-[0_6px_25px_rgba(59,130,246,0.3)] active:translate-y-0"
+        >
+          <span className="relative z-10 capitalize">contact me</span>
+
+          <span
+            className=" absolute inset-0 -translate-x-full bg-white/10 transition-transform duration-500 group-hover:translate-x-0"
+          />
+        </button>
+
+       
       </nav>
     </section>
   );
