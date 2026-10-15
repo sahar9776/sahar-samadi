@@ -3,17 +3,17 @@ import { ArrowUpRight, ExternalLink, LockKeyhole } from "lucide-react";
 function Projects() {
   const projectsList = [
     {
-      title: "System ...",
+      title: "Halal system (phase one)",
       libraries: ["React", "Tailwind", "TanStack", "Redux"],
       content:
-        "A real-world enterprise project developed in a professional environment. Due to confidentiality, project details and source code are not publicly available.",
+        "A nationwide management system developed for slaughterhouses across the country, built with React, Redux, and TanStack Query. The platform supports multiple user roles with role-based access and functionality. Due to confidentiality, further project details and source code cannot be shared publicly.",
       private: true,
     },
     {
-      title: "Game & Travel",
+      title: "Sports and leisure system",
       libraries: ["React", "Tailwind", "TanStack", "Redux"],
       content:
-        "A real-world enterprise project developed in a professional environment. Due to confidentiality, project details and source code are not publicly available.",
+        "A real-world platform developed for managing sports, educational courses, and recreational services at scale. Built in a professional environment, the system supports a range of user needs and operational workflows. Due to confidentiality, further technical and business details cannot be disclosed.",
       private: true,
     },
     {
