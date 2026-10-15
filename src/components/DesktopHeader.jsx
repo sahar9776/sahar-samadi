@@ -26,7 +26,7 @@ function DesktopHeader() {
         <span className="capitalize">Port</span>
         <span className="text-[#3b82f6]">folio</span>
       </h3>
-      <nav className="flex gap-4">
+      <nav className="flex gap-6">
         {navList.map((item, index) => (
           <Link
             to={item.url}
