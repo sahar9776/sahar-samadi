@@ -43,6 +43,7 @@ function DesktopHeader() {
           </Link>
         ))}
 
+         <div className="flex gap-2">
          {/* Download CV */}
         <a
           href="/files/Sahar-Samadi-CV.pdf"
@@ -75,6 +76,7 @@ function DesktopHeader() {
             className=" absolute inset-0 -translate-x-full bg-white/10 transition-transform duration-500 group-hover:translate-x-0"
           />
         </button>
+         </div>
 
        
       </nav>
